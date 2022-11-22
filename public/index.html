@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- vincular html con css y js -->
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts.js"></script>
+  <!-- importar fuentes de Google Fonts  -->
+  <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Open+Sans:wght@700&display=swap"
+    rel="stylesheet">
+  <!-- boostrap css js y icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+  <!--navbar -->
+  <nav class="navbar navbar-expand-lg my-3">
+    <div class="container-fluid">
+      <figure><a  href="#"><img src="image/logo1.png" alt="MODAOK"></a></figure>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+        <ul class="navbar-nav ">
+          <li class="nav-item mx-2 ">
+            <a class="nav-link active text-dark me-5 link-success" href="#" role="button" data-bs-toggle="" aria-expanded="false">Nuevo</a>
+          </li>
+          <li class="nav-item dropdown mx-2">
+            <a class="nav-link text-dark me-5 link-success " href="../public/section-mujer.html" role="button" data-bs-toggle="" aria-expanded="false">
+              Mujeres
+            </a>
+          </li>
+          <li class="nav-item dropdown  mx-2">
+            <a class="nav-link text-dark me-5 link-success " href="../public/component/hombres-component/index.html" role="button" data-bs-toggle="" aria-expanded="false">
+              Hombres
+            </a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link active text-dark me-5 link-success " href="../unisex-section.html" role="button" data-bs-toggle="" aria-expanded="false">Unisex</a>
+          </li>
+        </ul>
+      <ul class="navbar-nav d-inline "> 
+        <li class="list-unstyled d-inline"><a class="text-dark " href="#"><i class="bi bi-heart-fill"></i></a></li>
+        <li class="list-unstyled d-inline"><a class="text-dark " href="#"><i class="bi bi-cart mx-4"></i></a></li>
+        <li class="list-unstyled d-inline"><a class="text-dark " href="#"><i class="bi bi-person-circle"></i></a></li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+     <!-- carousel -->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner principal">
+      <div class="carousel-item active">
+        <img src="image/imag1car.jpg" class="d-block w-100  img-fluid" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="image/imag2car.jpg" class="d-block w-100 img-fluid " alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="image/imag3car.jpg" class="d-block w-100 img-fluid" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!--SECCION DE LAS ULTIMAS NOVEDADES-->
+  <hr class="featurette-divider">
+
+
+  <div class="container page-content">
+    <div class="container my-5">
+      <h1 class="text-center">Nuestras ultimas novedades</h1>
+    </div>
+    <div class="product-container">
+      <p class="text-center">Nombre</p>
+      <img src="image/prod-1.jpg" />
+      <h4 class="text-center">$5000</h4>
+     
+    </div>
+    <div class="product-container">
+      <p class="text-center">Nombre</p>
+      <img src="image/prod-2.jpg" />
+      <h4 class="text-center">$7100</h4>
+    
+    </div>
+    <div class="product-container">
+      <p class="text-center">Nombre</p>
+      <img src="image/prod-3.jpg" />
+      <h4 class="text-center">$7777</h4>
+     
+    </div>
+    <div class="product-container">
+      <p class="text-center">Nombre</p>
+      <img src="image/prod-3.jpg" />
+      <h4 class="text-center">$7777</h4>
+      <!--<button class="button-add " onclick="add('prod-3', 7777)"> agregar</button>-->
+    </div>
+  </div>
+  <!--banner-->
+  <div class="container-fluid mt-3 ">
+    <div class="row ">
+      <div class="col-sm-12 col-lg-4 col-md-8">
+        <p class="h2   text-center"><i class="bi bi-truck">Envíos a todo el país.</i></p>
+      </div>
+      <div class="col-sm-12 col-lg-4 col-md-8">
+        <p class="h2 mx-auto text-center"><i class="bi bi-credit-card">Pagá con débito o crédito.</i></p>
+        <p class="h6 mx-auto text-center text-muted">con VISA o MASTERCARD de todos los bancos</p>
+      </div>
+      <div class="col-sm-12 col-lg-4 col-md-8">
+        <p class="h2 mx-auto text-center"><i class="bi bi-shop-window">Retirá en nuestra tienda.</i></p>
+      </div>
+    </div>
+  </div>
+  
+    <!--Categorias-->
+  <div class="container-fluid mt-3">
+    <div class="row">
+      <div class="col-sm-12 col-lg-4 col-md-8 ">
+        <figure><a href="#"><img class="img-fluid align-center d-block mx-auto  " src="image/Mujer.jpg"></a></figure>
+      </div>
+      <div class="col-sm-12 col-lg-4 col-md-8">
+        <figure><a href="#"><img class="img-fluid align-center d-block mx-auto " src="image/Unisex.jpg"></a></figure>
+      </div>
+      <div class="col-sm-12 col-lg-4 col-md-8">
+        <figure><a href="#"><img class="img-fluid align-center d-block mx-auto " src="image/Hombre.jpg"></a></figure>
+      </div>
+    </div>
+  </div>
+
+ <!--footer-->
+  <div class="container-fluid">
+    <div class="row bg-dark p-3 text-white"><!--todos los estilos van a ir dentro de la clase row-->
+      <div class="col-sm-12 col-lg-3 col-md-6">
+        <figure>
+          <img class="mb-3 text-white " src="image/logo1.png" alt="MODAOK">
+        </figure>
+      </div>
+      <div class="col-sm-12 col-lg-3 col-md-6">
+        <p class="h5 mb-3 ">Contactanos</p>
+        <a class="text-white text-decoration-none link-success" href="#">modaok01@gmail.com</a>
+      </div>
+      <div class="col-sm-12 col-lg-3 col-md-6">
+        <p class="h5 mb-3">Mi cuenta</p>
+        <div class="mb-2">
+          <a class="text-white text-decoration-none link-success " href="#">Iniciar sesión</a>
+        </div>
+        <div class="mb-2">
+          <a class="text-white text-decoration-none link-success " href="#">Ver carrito</a>
+        </div>
+        <div class="mb-2">
+          <a class="text-white text-decoration-none link-success " href="#">Mi lista de favoritos</a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-3 col-md-6">
+        <p class="h5  mb-3">Redes sociales</p>
+        <div class="mb-2">
+          <a class="text-white link-success" href="#"><i class="bi bi-instagram"></i></a>
+        </div>
+        <div class="mb-2">
+          <a class="text-white link-success" href="#"><i class="bi bi-facebook"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

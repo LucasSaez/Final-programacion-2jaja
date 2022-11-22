@@ -1,0 +1,32 @@
+*{
+  margin: 0;  /*:::espesifica el margen en este caso no tiene margen::*/
+  padding: 0; /*::padding o relleno da un relleno diferente en cada uno de sus lados.CSS te permite controlar por separado el padding de los cuatro lados individuales de un elemento por medio de las propiedades padding-top, padding-right, padding-bottom y padding-left.:::*/
+}
+body{
+    background-color: aliceblue;
+    margin:0px;
+    font-family: 'Nerko One', cursive;
+}
+.page-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+.product-container {
+    margin: 15px; 
+    padding: 2px 16px;
+    position:relative; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    background-color: white;
+}
+.product-container img{
+    width: 200px;
+
+}
+.product-container h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-left: 15px;
+
+}
