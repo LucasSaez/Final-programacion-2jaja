@@ -1,65 +1,50 @@
-header {
-    position: relative;
-    /* background-color: black; */
-    height: 75vh;
-    min-height: 25rem;
-    width: 100%;
-    overflow: hidden;
-}
-
-header video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-}
-
-header .container {
-    position: relative;
-    z-index: 2;
-}
-
-header .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    opacity: 0.5;
-    z-index: 1;
-}
-
-/* Media Query for devices withi coarse pointers and no hover functionality */
-
-/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
-
-@media (pointer: coarse) and (hover: none) {
-    header {
-        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-    }
-
-    header video {
-        display: none;
-    }
-}
-
-/*-------------------------------*/
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
-
 body {
     font-family: "Poppins", sans-serif;
     color: #444444;
 }
+
+
+header {
+	background: url("./image/imagen-inicio-mujer.jpg");
+	text-align: center;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 85% 85% / 30%;
+}
+header .overlay{
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+    background-image: linear-gradient( 135deg, #00000069 10%, #fd5e086b 100%);
+	
+}
+
+h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 80px;
+	margin-bottom: 30px;
+}
+
+button {
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 50px;
+	color: #333;
+	background: #fff;
+	margin-bottom: 50px;
+	box-shadow: 0 3px 20px 0 #0000003b;
+}
+
+
+
+/*SECCION DE PRODUCTOS*/
 
 a,
 a:hover {
@@ -219,7 +204,7 @@ a:hover {
 }
 h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    text-decoration: underline;
+    
 }
 .s1{
     background-color: black;
